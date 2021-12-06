@@ -28,7 +28,7 @@ func rootOfNumber(is number: Int) throws -> Int {
 }
 
 do {
-    let number = 90;
+    let number = 10001;
     let root = try rootOfNumber(is: number)
     print("Square root of \(number) is \(root)")
 } catch RootError.OutOfBound {
