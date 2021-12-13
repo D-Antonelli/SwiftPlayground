@@ -15,6 +15,10 @@ class Animal {
 }
 
 class Dog:Animal {
+    init() {
+        super.init(legs: 4)
+    }
+    
     override func speak() {
         print("Woof woof!")
     }
@@ -29,9 +33,9 @@ class Corgi:Dog {
 class Cat:Animal {
     let isTame: Bool
     
-    init(legs: Int, isTame: Bool) {
+    init(isTame: Bool) {
         self.isTame = isTame
-        super.init(legs: legs)
+        super.init(legs: 4)
     }
     
     override func speak() {
@@ -39,9 +43,9 @@ class Cat:Animal {
     }
 }
 
-let daisy = Corgi(legs: 4)
+let daisy = Corgi()
 daisy.speak();
 // daisy.legs = 2 -> immutable
 
-let misty = Cat(legs: 4, isTame: true)
+let misty = Cat(isTame: true)
 misty.speak()
