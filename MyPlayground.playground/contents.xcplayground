@@ -6,5 +6,6 @@
         <page name='SquareRoot'/>
         <page name='Struct'/>
         <page name='Classes'/>
+        <page name='Protocols'/>
     </pages>
 </playground>
